@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robot" content="index,follow" />
+    <meta
+      name="description"
+      content="這是前端工程師Eric.的個人首頁 ｜ 前端工程師個人介紹首頁"
+    />
+    <base target="_self" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles/index.css" />
+    <meta name="author" content="Eric." />
+    <title>我的履歷｜Eric. 前端工程師</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="./index.html">首頁</a></li>
+          <li><a href="./resume.html">我的履歷</a></li>
+          <li class="active"><a class="active" href="#">聯絡方式</a></li>
+          <li><a href="./project1/index.html">Taiwan Project</a></li>
+          <li><a href="./progect2/index.html">Hawaii Project</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="form">
+        <form>
+          <div>
+            <label for="name"> 姓名： </label>
+            <input
+              type="text"
+              id="name"
+              placeholder="請輸入您的姓名"
+              required
+              minlength="2"
+              maxlength="10"
+              name="name"
+            />
+          </div>
+
+          <br />
+          <div class="gender">
+            <label class="LG" for="gender">性別：</label>
+            <input
+              type="radio"
+              value="male"
+              name="gender"
+              id="gender"
+              checked
+              required
+            />
+            男生
+            <input type="radio" value="female" name="gender" id="gender" />
+            女生
+            <input type="radio" value="other" name="gender" id="gender" />
+            其他
+          </div>
+
+          <br />
+          <div>
+            <label for="email">信箱：</label>
+            <input
+              name="emailAdress"
+              type="email"
+              id="email"
+              placeholder="xxx@gmail.com..."
+              required
+            />
+          </div>
+
+          <br />
+          <div>
+            <label for="celephone">手機：</label>
+            <input
+              name="phoneNumber"
+              type="text"
+              id="celephone"
+              placeholder="09xx-xxx-xxx"
+              required
+            />
+          </div>
+
+          <br />
+          <div>
+            <label style="vertical-align: top" for="yourWant">需求：</label>
+
+            <textarea
+              name="wantArea"
+              id="yourWant"
+              rows="10"
+              placeholder="請寫下您的需求，謝謝！"
+              required
+            ></textarea>
+          </div>
+
+          <br />
+          <button type="submit">提交表單</button>
+        </form>
+      </section>
+      <div class="line"></div>
+      <section class="contact">
+        <h2>我的手機： 0909-896-892</h2>
+        <h2>我的信箱： cvbn111222333g@gmail.com</h2>
+        <h2>聯絡時間 : 週一至週日早上七點至晚間十點</h2>
+      </section>
+    </main>
+    <footer>
+      <a href="https://www.facebook.com"
+        ><img
+          src="./image/facebook.svg"
+          alt="FacebookIcon"
+          title="Facebook Page"
+      /></a>
+      <a href="https://www.instagram.com"
+        ><img
+          src="./image/instagram.svg"
+          alt="InstagramIcon"
+          title="Instagram Page"
+      /></a>
+      <a href="https://www.github.io.com"
+        ><img src="./image/github.svg" alt="GithubIcon" title="Github Page"
+      /></a>
+    </footer>
+  </body>
+</html>

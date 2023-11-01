@@ -1,0 +1,323 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+  max-width: 100%;
+}
+
+body {
+  position: relative;
+}
+
+.greenBackground {
+  position: absolute;
+  top: -9vh;
+  right: 0;
+  z-index: -1;
+  height: 130vh;
+  width: 45vw;
+}
+
+header {
+  width: 100%;
+}
+header nav ul {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+}
+header nav ul li {
+  list-style-type: none;
+  margin: 2rem;
+}
+header nav ul li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+}
+header nav ul li a.active {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #48aca0;
+  border-bottom: 3px solid #48aca0;
+}
+header nav ul li a:hover {
+  color: #48aca0;
+  border-bottom: 3px solid #48aca0;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+main section.left {
+  flex: 3 1 500px;
+}
+main section.left h1 {
+  font-size: 5rem;
+  color: #48aca0;
+  padding: 1rem 0rem 2rem 2rem;
+}
+main section.left p {
+  font-size: 2rem;
+  padding: 2rem 0rem 2rem 2rem;
+}
+main section.right {
+  flex: 1 1 600px;
+  position: relative;
+  flex-wrap: wrap;
+}
+main section.right img {
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+  transform: rotateZ(-17deg);
+  position: absolute;
+  top: 30vh;
+  right: 17vw;
+}
+main section.table {
+  flex: 3 1 500px;
+  padding: 1.5rem;
+}
+main section.table table {
+  border-collapse: collapse;
+  border-top: 2px solid gray;
+}
+main section.table table tr {
+  border-bottom: 2px solid gray;
+  transition: all 0.15s ease-in;
+}
+main section.table table tr:hover {
+  background-color: rgba(124, 218, 209, 0.4705882353);
+}
+main section.table table tr td {
+  padding: 1rem;
+}
+main section.table table tr td img.react {
+  margin-left: 1rem;
+  margin-bottom: 0.7rem;
+  width: 80px;
+  height: 80px;
+}
+main section.table table tr td.h1 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+main section.p2Pic {
+  margin-left: 2rem;
+  position: relative;
+  flex: 1 1 600px;
+}
+main section.p2Pic img {
+  margin-top: 2rem;
+  margin-left: 3rem;
+  height: 35vw;
+  width: 28vw;
+}
+main section.p2Pic div.p2PicBack {
+  position: absolute;
+  background-color: #16a594;
+  width: 28vw;
+  height: 65vh;
+  top: 9vh;
+  right: 11.9vw;
+  z-index: -5;
+}
+main section.form {
+  flex: 1 1 600px;
+  height: 70vh;
+}
+main section.form form {
+  display: flex;
+  flex-direction: column;
+}
+main section.form form div.gender label {
+  margin-left: -4rem;
+}
+main section.form form div.gender label.LG {
+  padding-left: 7.5rem;
+}
+main section.form form div.gender input {
+  width: 5%;
+}
+main section.form form div label {
+  font-size: 1.5rem;
+  padding: 2rem 2rem 2rem 3.5rem;
+}
+main section.form form div input,
+main section.form form div textarea {
+  width: 70%;
+  border: none;
+  padding: 1.2rem 0.75rem;
+  background-color: #97d3cd;
+}
+main section.form form div input::-moz-placeholder, main section.form form div textarea::-moz-placeholder {
+  color: rgba(10, 10, 10, 0.349);
+}
+main section.form form div input::placeholder,
+main section.form form div textarea::placeholder {
+  color: rgba(10, 10, 10, 0.349);
+}
+main section.form form button {
+  width: 10rem;
+  background-color: #48aca0;
+  border: none;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  align-self: center;
+  border-radius: 10px;
+  color: white;
+  transition: all 0.3s ease;
+}
+main section.form form button:hover {
+  background-color: #3a8980;
+  color: white;
+}
+main div.line {
+  width: 3px;
+  height: 80vh;
+  background-color: gray;
+}
+main section.contact {
+  flex: 1 1 500px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: -9rem;
+}
+main section.contact h2 {
+  padding: 1rem 0rem;
+}
+
+footer a img {
+  margin: 1rem;
+}
+
+@media screen and (max-width: 1300px) {
+  .greenBackground {
+    opacity: 0.2;
+    position: absolute;
+    top: -10vh;
+    right: -90vw;
+    z-index: -1;
+    height: 100vh;
+    width: 200vw;
+  }
+  header nav ul {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  header nav ul li {
+    border-bottom: 3px solid #878989;
+  }
+  header nav ul li a {
+    font-size: 2.5rem;
+  }
+  header nav ul li.active {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-bottom: 3px solid #48aca0;
+  }
+  header nav ul li.active a {
+    border-bottom: none;
+    font-size: 2.5rem;
+  }
+  header nav ul li:hover {
+    border-bottom: 3px solid #48aca0;
+  }
+  main section.left p {
+    flex: 3 1 300px;
+    padding: 0rem 4.5rem;
+  }
+  main section.right {
+    flex: 1 1 300px;
+    display: flex;
+    justify-content: center;
+  }
+  main section.right img {
+    position: static;
+    margin: 2.5rem;
+    height: 37vw;
+    width: 37vw;
+  }
+  main section.p2Pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main section.p2Pic div.photo {
+    height: 40vw;
+    width: 40vw;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  main section.p2Pic div.photo img {
+    border-radius: 50%;
+    margin: -0.3rem;
+    height: 40vw;
+    width: 40vw;
+    transition: all 0.2s ease;
+  }
+  main section.p2Pic div.photo img:hover {
+    transform: scale(1.2);
+  }
+  main section.p2Pic div.p2PicBack {
+    display: none;
+  }
+  footer a img {
+    padding-left: 2rem;
+    margin: 1rem 0rem 1rem 1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  main section.left h1 {
+    font-size: 3rem;
+  }
+  main section.left p {
+    font-size: 1.5rem;
+  }
+  section.right {
+    margin-left: 3.5rem;
+  }
+  section.right img {
+    justify-content: center;
+    align-content: center;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  main section.table table tr td img.css {
+    margin-right: 5rem;
+  }
+  main section.form form div label {
+    padding: 0rem 0rem 0rem 1.5rem;
+  }
+  main section.form form div label.LG {
+    padding-left: 1rem;
+  }
+}
+@media screen and (max-width: 600px) and (max-width: 470px) {
+  main main section.table table tr td img {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 600px) and (max-width: 320px) {
+  main section.form form div label {
+    padding: 0;
+  }
+  main section.form div.gender label.LG {
+    margin-left: -7.5rem;
+    margin-right: rem;
+  }
+}/*# sourceMappingURL=index.css.map */
